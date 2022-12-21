@@ -63,7 +63,7 @@ header{
 }
 #subTitle2{font-size: 3.5rem;}
 #bdyTxt{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     margin: 100px 200px;
     line-height: 160%;
@@ -79,7 +79,7 @@ header{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 15rem;
+    font-size: 10rem;
     font-weight: bold;
 }
 .cirCle{
