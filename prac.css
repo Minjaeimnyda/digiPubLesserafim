@@ -1,0 +1,241 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    margin: 0 0;
+    padding: 0 0;
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo img{
+    margin: 0 0;
+    padding: 0 0;
+    height: 150px;
+    position: relative;
+    background-color: white;
+}
+.items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    /*margin-right: 50px;*/
+    background-color: white;
+    float: left;
+    margin-right: 0px;
+}
+.items li{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+.items li a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+.items li:hover{
+    background-color: rgb(255, 255, 255);
+    opacity: 30%;
+}
+/*메뉴*/
+#subTitle{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 150px 200px;
+}
+#subTitle img{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#subTitle2{font-size: 3.5rem;}
+#bdyTxt{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 100px 200px;
+    line-height: 160%;
+}
+#bdyTxt2{font-weight: bold; font-size: 4.5rem;}
+#movie{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(img/main1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15rem;
+    font-weight: bold;
+}
+.cirCle{
+    border-radius: 50%;
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+.row{display: flex; margin: 0px 200px;}
+.mar{margin-top: 150px; margin-bottom: 50px;}
+
+.col-1{width: 16.6%; padding: 5px 0px 5px 5px;}
+.col-2{width: 33.3%; padding: 5px 0px 5px 5px;}
+.col-3{width: 50%; padding: 5px 0px 5px 5px;}
+.col-4{width: 66.6%; padding: 5px 0px 5px 5px;}
+.col-5{width: 83.3%; padding: 5px 0px 5px 5px;}
+.col-6{width: 100%;}
+
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+.h-400{height: 400px;}
+.h-500{height: 500px;}
+
+.tx-white{color: white;}
+.tx-black{color: black;}
+.bg-white{background-color: white;}
+
+.alignHor{display: flex; align-items: center;}
+.alignFlex{display: flex; align-items: center; justify-content: center;}
+.img-fit{width: 100%; height: auto; /*justify-content: center; align-items: center;*/}
+
+.albumText{line-height: 160%; text-align: center;}
+.hambergBtn{
+    display: none;
+    position: relative;
+    height: 50px;
+    right: 0px;
+}
+.memberImg{height: auto;}
+img{width: 100%;}
+.container{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+@media all and (max-width:768px) /*screen*/
+{
+    header{
+        margin: 0 0;
+        padding: 0 0;
+        height: 70px;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        display: flex;
+        height: 70px;
+    }
+    #logo img{
+        margin: 0 0;
+        padding: 0 0;
+        height: 70px;
+        position: relative;
+    }
+   header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px;
+    }
+    .items{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .items li{
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .hambergBtn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 50px;
+    }
+    .container{
+        display: flex;
+        width: 50px;
+    }
+    .items.active{
+        display: block;
+    }
+    .row{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px 0px;
+    }
+    .col-1{width: 90%;}
+    .col-2{width: 90%;}
+    .col-3{width: 100%; height: auto;}
+    .col-4{width: 90%;}
+    .col-5{width: 90%;}
+    .col-6{width: 100%;}
+
+    #subTitle{
+        font-size: 2rem;
+        margin: 40px 0px 10px 0px;
+        padding: 0px 20px 0px 20px;
+    }
+    #subTitle img{
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    #subTitle2{font-weight: bold; font-size: 2rem; margin: 0px 0px 10px 0px; padding: 0px 20px 0px 20px;}
+    #bdyTxt{
+        font-size: 0.8rem;
+        margin: 10px 0px 20px 0px;
+        padding: 0px 20px 0px 20px;
+    }
+    #bdyTxt2{font-size: 1.5rem; margin: 0px 0px 20px 0px;}
+    #movie{
+        width: 100%;
+        display: flex;
+        background-image: url(르세라핌/main1.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: 3rem;
+    }
+    .cirCle{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .alignHor{display: flex; align-items: center;}
+    .alignFlex{display: flex; align-items: center; justify-content: center;}
+    .img-fit{width: 100%; height: auto;}
+}
